@@ -49,6 +49,7 @@ codexes:
     config:
       description: "Groq API adapter (OpenAI Compatible) - Multi-Language Production Grade"
       # Get your API key from https://console.groq.com/
+      api_url: "https://api.groq.com/openai/v1/chat/completions"
       api_key: "${GROQ_API_KEY}"
       model: "moonshotai/kimi-k2-instruct-0905"
       cooldown_seconds: 1.5
