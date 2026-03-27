@@ -1,0 +1,16 @@
+{
+  "name": "minilibrary",
+  "description": "A simple library management system",
+  "versions": [
+    {
+      "name": "v0",
+      "spec": "SPEC-v0.txt",
+      "tests": ["test-v0.sh"]
+    },
+    {
+      "name": "v1",
+      "spec": "SPEC-v1.txt",
+      "tests": ["test-v1.sh"]
+    }
+  ]
+}

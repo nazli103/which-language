@@ -1,0 +1,56 @@
+PROJECT: mini-library
+AUTHOR: [Nazlı Karagöz] ([251478051])
+
+
+OVERVIEW
+
+mini-library is a command-line tool to manage book lending.
+It tracks which books are available and which are borrowed.
+
+All data is stored in a directory called .minilib/ in the 
+current working directory.
+
+
+COMMANDS
+
+init
+Usage: python minilib.py init
+Creates a .minilib/ directory and an empty books.dat file.
+If .minilib/ already exists, print "Already initialized" and exit.
+
+add
+Usage: python minilib.py add "The Great Gatsby"
+Appends a new book to books.dat with status AVAILABLE.
+Each book has: id (auto-increment), title, status (AVAILABLE/BORROWED).
+Prints: "Added book #<id>: <title>"
+
+list
+Usage: python minilib.py list
+Prints all books from the database.
+(v0 limitation: Prints raw file content or 'Not implemented' message)
+
+borrow
+Usage: python minilib.py borrow 1
+Changes book #1 status to BORROWED.
+Prints: "Book #1 is now borrowed."
+
+return
+Usage: python minilib.py return 1
+Changes book #1 status to AVAILABLE.
+Prints: "Book #1 is now returned."
+
+
+DATA FORMAT
+
+File: .minilib/books.dat
+Format: id|title|status
+Example:
+1|The Great Gatsby|AVAILABLE
+2|1984|BORROWED
+
+
+ERROR HANDLING
+
+- Running before "init": print "Not initialized. Run: python minilib.py init"
+- Unknown command: print "Unknown command: <command>"
+- Missing arguments: print "Usage: python minilib.py <command> [args]"
