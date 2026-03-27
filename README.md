@@ -295,3 +295,10 @@ NFR1: Sistem kullanıcı dostu olmalıdır.
 NFR2: Sistem hızlı çalışmalıdır.
 NFR3: Hata mesajları anlaşılır olmalıdır.
 NFR4: Kod okunabilir olmalıdır.
+
+## Project Update: Version 1 (V1)
+In this version, I have completed the following tasks:
+ **New Commands:** Implemented `list`, `borrow`, and `return` functions to manage book status.
+ **Language Suggester:** Added a new `suggest` command to recommend programming languages based on user interest (satisfying FR1 & FR2).
+ **Error Handling:** All error messages are now user-friendly and clear (satisfying FR3 & NFR3).
+ **Data Persistence:** The system correctly updates the `books.dat` file for status changes.
