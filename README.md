@@ -106,6 +106,7 @@ We are constantly expanding our coverage. Here is where the initiative stands to
 - 📊 **miniscoreboard** — Lightweight match manager and logger
 - 📖 **minilibrary** - Book management and library tracking tool
 - 📦 **miniinventory** - Inventory manager
+- 📝 **miniquiz** - Quiz application
 
 ---
 
